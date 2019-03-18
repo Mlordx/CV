@@ -1,0 +1,172 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+\usepackage{xcolor}
+\usepackage{amsfonts}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Mateus}{Barros Rodrigues}
+%\title{Resume}                               % optional, remove / comment the line if not wanted
+%\address{Rua André Thomas, 661, Osasco - SP, Brazil, 06023-120}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+55 11 97037-3867}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+55 11 2533-5147}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{matt@ime.usp.br}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/mlordx}
+
+% optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+
+\makecvtitle
+
+\vspace{-40pt}
+
+\section{Education}
+%\vspace{10pt}
+\begin{itemize}
+\item[]{\cventry{Feb 2017 - Jul 2019}{Master's Degree in Computer Science}{\newline Project Title: ``Geometric
+      shortest path problems''}{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small  
+        \begin{itemize}
+        \item \textbf{Description:} I am currently studying several algorithms for the classical geometric single source shortest path problem inside simple polygons, where given a source vertex we would like to find the shortest path from it to every other vertex without violating the boundary of the polygon.
+          % 
+        \item \textbf{Teaching Assistant Work:} Introduction to Computer Science (2018/1) and Algorithms and Data Structures II
+          (2017/2).
+        \end{itemize}
+        % 
+      \end{minipage}}}
+    
+\vspace{10pt}
+
+\item[]{\cventry{Mar 2012 - Dec 2016}{Bachelor's Degree in Computer
+      Science}{%\newline Dissertation Title: ``Window-segment intersection queries''
+    }{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small   
+        \begin{itemize}
+        %\item \textbf{Description:} I studied and implemented a computational geometry algorithm to quickly find all
+        %  line segments intersecting with a given rectangular window on $\mathbb{R}^2$ space and many related algorithms for point
+        %  location and line segments intersection. More information at:
+        %  \href{https://linux.ime.usp.br/~mlord/mac0499/}{{\color{blue}linux.ime.usp.br/\textasciitilde{}mlord/mac0499/}}.
+          %
+        \item \textbf{Teaching Assistant Work:} Introduction to Computer Science (2015/1) and Principles of Algorithm Design
+          (2015/2).
+          %
+        \end{itemize}
+      \end{minipage}
+    }}
+%\vspace{3pt}
+\end{itemize}
+
+\section{Projects}
+% \vspace{10pt}
+\begin{itemize}
+\item[]{\cventry{Mar 2016 - Dec 2016}{Window-Segment Intersection Queries}{Undergraduate thesis}{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small   
+        \begin{itemize}
+        \item Implemented and wrote a monograph about a computational geometry algorithm to quickly find all line segments intersecting with a
+          given rectangular window.
+        \item Required the study of data structures such as ``Segment Tree'' and ``Layered Range Tree'' and many point location algorithms.
+        \item The source code is entirely available at: \href{https://www.linux.ime.usp.br/~mlord/mac0499}{\color{blue}linux.ime.usp.br/\textasciitilde{}mlord/mac0499.}
+        \end{itemize}
+      \end{minipage}
+    }}
+
+\vspace{5pt}
+  
+\item[]{\cventry{Mar 2015 - Jul 2015}{Teaching Assistant Management System}{\newline Contributed to the development of the TA
+      Managing Website}{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small   
+        \begin{itemize}
+        \item Helped develop the management system for TAs while undertaking ``Extreme Programming Lab'' course.
+        \item Implementation was mostly done using \textit{Ruby on Rails} and followed agile development practices.
+        \item Developed features such as integration with USP's official undergraduate management system and the automatization
+          of related documents. Code is available at: \href{https://github.com/monitoria-imeusp/}{\color{blue}github.com/monitoria-imeusp/}
+        \end{itemize}
+      \end{minipage}
+    }}
+    
+\vspace{5pt}
+
+\item[]{\cventry{Aug 2014 - Dec 2014}{4-Approximation Algorithm for Convex Decomposition of a Simple Polygon}{\newline
+      Computational Geometry Algorithm Implementation.}{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small   
+        \begin{itemize}
+       % \item \textbf{Description:} Python implementation of Hertel and Mehlhorn's algorithm for convex decomposition of simple polygons for MAC0331 - Computational Geometry course. It required implementation of a Red-Black Binary tree, an algorithm for triangulation of monotone polygons and an implementation of the Winged Edge data structure. 
+       %
+        \item Implementation of Hertel and Mehlhorn's algorithm while undertaking ``Computational Geometry'' course.
+        \item Required the study of structures such as ``Red-Black Binary Tree'' and the ``Winged Edge structure'' and
+          other algorithms such as the triangulation of monotone polygons.
+        \item The source code is entirely available at \href{https://github.com/mlordx/mac0331}{\color{blue}github.com/mlordx/mac0331}.
+        \end{itemize}
+      \end{minipage}
+    }}
+\end{itemize}
+
+\section{Extra-curricular Activities}
+%\vspace{10pt}
+\begin{itemize}
+
+\item[]{\cventry{Apr 2014 - Apr 2016}{Organization of the Computer Science Week (Encontro do BCC)}{}{IME-USP}{}{
+      \begin{minipage}{1.0\linewidth}
+        \small   
+        \begin{itemize}
+        %\item \textbf{Description:} Helped surveying students' topics of interest, finding and inviting speakers and potential sponsors, arranging accommodation and transportations for speakers, among other event-managing related tasks. 
+        %
+        \item Participated as one of the organizers in IME-USP's Computer Science Week (Encontro do BCC)
+        \item Surveyed student's topics of interest, helped to arrange accomodations and transportation for speakers, among other
+          event-managing tasks.
+        \item Webpage of the event: \href{https://www.bcc.ime.usp.br/encontro}{\color{blue}bcc.ime.usp.br/encontro.}
+        \end{itemize}
+      \end{minipage}
+    }}
+
+\end{itemize}
+\end{document}
